@@ -1,0 +1,45 @@
+    body {
+        font-size: 18px;
+        padding: 0;
+        margin: 1rem 20% 1rem 20%;
+        background: linear-gradient(to right, #f64f59, #c471ed, #12c2e9);
+    }
+    
+    h1 {
+        font-family: "My Soul";
+    }
+    
+    h2,
+    h3 {
+        font-family: 'PT Sans', cursive;
+    }
+    
+    p,
+    a {
+        font-family: 'Josefin Sans', sans-serif;
+    }
+    
+    a {
+        color: azure;
+        text-decoration: none;
+    }
+    
+    a:hover {
+        color: greenyellow;
+    }
+    
+    header,
+    footer {
+        text-align: center;
+        background-color: aqua;
+        padding: 1rem;
+        border-radius: 20px;
+    }
+    
+    header img {
+        margin-top: 3rem;
+        float: right;
+        max-width: 240px;
+        border-radius: 2ch;
+        box-shadow: 0 0 30px orange;
+    }
