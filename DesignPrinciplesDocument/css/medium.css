@@ -1,20 +1,24 @@
         @media only screen and (min-width: 32.5em) {
-        main {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-        }
-        h1 {
-            font-size: 2.5rem;
-        }
-        h2 {
-            font-size: 1.5rem;
-        }
-        header,
-        footer {
-            border-radius: 10px;
-        }
-        header img {
-            box-shadow: 0 0 30px #444;
-            float: right;
-            border-radius: 0 10px 0 0;
+            body {
+                margin: 0 10%;
+            }
+            main {
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+            }
+            h1 {
+                font-size: 2.5rem;
+            }
+            h2 {
+                font-size: 1.5rem;
+            }
+            header,
+            footer {
+                border-radius: 10px;
+            }
+            header img {
+                box-shadow: 0 0 30px #444;
+                float: right;
+                border-radius: 0 10px 0 0;
+            }
         }
