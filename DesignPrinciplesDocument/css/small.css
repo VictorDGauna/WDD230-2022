@@ -2,7 +2,7 @@ body {
     margin: 0 10% 0 10%;
     font-size: 16px;
     background-image: url("../images/mountains.jpg");
-    background-size: 100rem;
+    background-size: auto;
 }
 
 header,
