@@ -1,8 +1,7 @@
 body {
     margin: 0 10% 0 10%;
     font-size: 16px;
-    font-family: 'Lato', sans-serif;
-    background-image: url("/WDD230-WINTER/lesson2/images/mountains.jpg");
+    background-image: url("../images/mountains.jpg");
     background-size: 100rem;
 }
 
@@ -37,8 +36,13 @@ header ul {
 }
 
 header h1 {
+    font-family: 'Tangerine';
     font-size: 3.5rem;
     margin: 0.15rem;
+}
+
+p {
+    font-family: 'Roboto';
 }
 
 header h2 {
