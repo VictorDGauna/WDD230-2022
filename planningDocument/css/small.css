@@ -115,3 +115,7 @@ footer {
 footer a {
     color: aliceblue;
 }
+
+footer a :hover {
+    color: green;
+}
