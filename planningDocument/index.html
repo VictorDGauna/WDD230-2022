@@ -10,12 +10,16 @@
     <link rel="stylesheet" href="../planningDocument/css/small.css">
     <link rel="stylesheet" href="../planningDocument/css/medium.css">
     <link rel="stylesheet" href="../planningDocument/css/large.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
-
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js">
+    </script>
+    <script>
+        WebFont.load({
+            google: {
+                families: ["Lato", "Oswald"]
+            }
+        });
+    </script>
     <title>Weather Site Plan</title>
 </head>
 
@@ -46,13 +50,15 @@
         <p>The primary purpose of WhatWonderfulWeather.com is to help people learn about the weather in the world's major cities and where they currently live.
             <br><br>The second purpose is to help people get news about the weather. </p>
         <h2>Logo Porpouse</h2>
-        <img src="../planningDocument/images/whatWonderfullDay-logo.png" alt="logo">
+        <img id="logo_weather" src="../planningDocument/images/whatWonderfullDay-logo.png" alt="logo">
 
 
     </main>
     <footer>
-        <p id="box-footer">&copy;<span id="currentYear"></span> | Victor Daniel Gauna | Argentina | <a href="https://www.byui.edu/online">BYUI Online Learning</a> | Last Updated: <span id="currentDate"></span></p>
-        <script src="js/currentDate.js"></script>
+        <p id="box-footer">&copy;<span id="currentYear"></span> | Victor Daniel Gauna | Argentina |<a id="byui" href="https://www.byui.edu/online">BYUI</a> Online Learning </p>
+        <p>Last Updated: <span id="currentDate"></span></p>
+        <script src="js/currentDate"></script>
+
     </footer>
 </body>
 
