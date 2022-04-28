@@ -31,7 +31,7 @@ h1 {
 h2,
 h3,
 h4 {
-    color: #536878;
+    color: red;
     font-family: 'Oswald', sans-serif;
 }
 
@@ -113,9 +113,9 @@ footer {
 }
 
 footer a {
-    color: aliceblue;
+    color: red;
 }
 
-footer a :hover {
+footer a:hover {
     color: green;
 }
