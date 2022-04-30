@@ -28,7 +28,6 @@ h1 {
     font-family: 'Oswald', sans-serif;
 }
 
-h2,
 h3,
 h4 {
     color: red;
@@ -110,10 +109,6 @@ main section:nth-child(2) {
 
 footer {
     height: auto;
-}
-
-footer a {
-    color: red;
 }
 
 footer a:hover {
