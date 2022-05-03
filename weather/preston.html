@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="Description" content="Assignment weather site Preston Idaho for Victor Daniel Gauna in WDD 230: Web Frontend Development at Brigham Young University - Idaho">
+    <link rel="stylesheet" href="../weather/css/normalize.css">
+    <link rel="stylesheet" href="../weather/css/small.css">
+    <link rel="stylesheet" href="../weather/css/medium.css">
+    <link rel="stylesheet" href="../weather/css/large.css">
+    <link rel="icon" href="../weather/images/whatWonderfullDay-logo.png" title="v iconos" type="image/x-icon">
+
+    <title>What Wonderfull Weather</title>
+</head>
+
+<body>
+    <header>
+        <div class="box-icon">
+            <img class="icon-header" src="../weather/images/whatWonderfullDay-logo.png" alt="icon-header">
+            <div>
+                <h1>What Wonderfull Weather</h1>
+                <h3>Start Your Day</h3>
+            </div>
+
+
+        </div>
+    </header>
+    <nav>
+        <ul>
+            <li>
+                <a href="#" id="active">Home</a>
+            </li>
+            <li>
+                <a href="#">Preston</a>
+            </li>
+            <li>
+                <a href="#">Soda Spring</a>
+            </li>
+            <li>
+                <a href="#">Fish Haven</a>
+            </li>
+            <li>
+                <a href="#">Storm Center</a>
+            </li>
+            <li>
+                <a href="#">Gallery</a>
+            </li>
+        </ul>
+    </nav>
+
+    <main>
+        <h2>Preston Idaho</h2>
+        <div class="box-container">
+            <h3> Hero w/ Weather Sumary </h3>
+        </div>
+        <div class="box-container">
+            <h3> 5 Day Forecast </h3>
+        </div>
+        <div class="box-container">
+            <h3> Article </h3>
+        </div>
+        <div class="box-container">
+            <h3> Contact Information </h3>
+        </div>
+
+    </main>
+    <footer>
+        <p id="box-footer">&copy;<span id="currentYear"></span> | Victor Daniel Gauna | Argentina |<a id="byui" href="https://www.byui.edu/online">BYUI</a> Online Learning | </p>
+        <p>Last Updated: <span id="currentDate"></span></p>
+        <script src="../weather/js/currentDate"></script>
+
+    </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js">
+    </script>
+    <script>
+        WebFont.load({
+            google: {
+                families: ["Lato", "Oswald"]
+            }
+        });
+    </script>
+
+</body>
+
+</html>
