@@ -18,6 +18,10 @@ body {
     margin: 0.5rem 2em;
 }
 
+header div {
+    display: none;
+}
+
 h1,
 h2,
 h3 {
@@ -44,7 +48,7 @@ footer {
     display: flex;
     text-align: center;
     align-items: center;
-    margin: 1rem;
+    margin: 0;
 }
 
 .box-icon h3 {
@@ -52,7 +56,15 @@ footer {
 }
 
 .icon-header {
-    width: 180px;
+    width: 350px;
+}
+
+nav button {
+    margin: .2rem 2vw;
+    background: transparent;
+    border: none;
+    font-size: 2rem;
+    color: #555;
 }
 
 nav {
@@ -73,21 +85,36 @@ nav ul li a {
     display: block;
     color: #fff;
     text-align: center;
+    font-style: bold;
     padding: 1rem;
     text-decoration: none;
     font-size: 1rem;
-    background: linear-gradient(90deg, transparent, rgb(235, 84, 159), transparent) top / var(--d, 0) 10px no-repeat;
+    background: linear-gradient(90deg, transparent, rgb(235, 84, 159), transparent) top / var( --d, 0) 10px no-repeat;
     transition: 0.5s;
 }
 
-nav a:hover {
+nav ul li a:hover {
     background-color: #bbb;
     color: #021a08;
     --d: 75%;
 }
 
-#active {
+nav ul li.active a {
     color: rgb(226, 71, 92);
+}
+
+nav ul {
+    display: none;
+}
+
+nav ul.open {
+    display: block;
+}
+
+nav ul.open li a:hover {
+    background-color: #bbb;
+    color: #021a08;
+    --d: 75%;
 }
 
 main {
@@ -109,3 +136,6 @@ main h2 {
 .box-container h3 {
     color: #b5179e;
 }
+
+
+/* Small/Phone View ***************/

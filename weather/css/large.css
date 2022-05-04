@@ -1,5 +1,9 @@
         @media only screen and (min-width: 60em) {
-            h1 {
+            .text-box {
+                display: flex;
+                flex-flow: column;
+            }
+            header h1 {
                 font-size: 2rem;
             }
             header,
