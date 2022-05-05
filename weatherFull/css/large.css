@@ -27,8 +27,11 @@
             }
             .article img {
                 float: right;
-                max-width: 25%;
-                max-height: 25%;
+                max-width: 20%;
+                max-height: 20%;
+            }
+            .article {
+                margin: 0;
             }
             .forecast-div {
                 display: block;
@@ -40,7 +43,12 @@
                 color: #F72585;
             }
             .weatherWeek {
+                display: block;
+                margin: 0;
                 margin-bottom: 1rem;
+            }
+            .weatherWeek h3 {
+                text-align: center;
             }
             #weatherDay {
                 margin: 0 auto;
@@ -49,6 +57,7 @@
                 color: #05386b;
             }
             #forecast-day {
+                justify-content: space-around;
                 background-color: rgb(10, 39, 68);
                 color: #eee;
                 font-family: sans-serif;
@@ -60,5 +69,6 @@
             .contact {
                 display: grid;
                 grid-template-columns: 1fr 1fr;
+                margin: 1rem 0;
             }
         }

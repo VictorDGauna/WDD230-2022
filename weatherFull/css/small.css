@@ -181,10 +181,6 @@ main h2 {
     display: none;
 }
 
-.weatherWeek h3 {
-    text-align: center;
-}
-
 .article {
     display: block;
     margin: auto 10%;
