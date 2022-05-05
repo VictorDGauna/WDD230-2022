@@ -1,0 +1,64 @@
+        @media only screen and (min-width: 60em) {
+            .text-box {
+                display: flex;
+                flex-flow: column;
+            }
+            header h1 {
+                font-size: 2rem;
+            }
+            header,
+            footer {
+                display: flex;
+                flex-direction: row;
+                text-align: center;
+                align-items: center;
+                justify-content: center;
+                background-color: #4361ee;
+                color: aliceblue;
+            }
+            nav a {
+                font-size: 1.1rem;
+            }
+            .weatherSumary {
+                position: absolute;
+                top: 350px;
+                left: 70px;
+                width: 15rem;
+            }
+            .article img {
+                float: right;
+                max-width: 25%;
+                max-height: 25%;
+            }
+            .forecast-div {
+                display: block;
+                text-align: center;
+                margin: 3% auto;
+            }
+            .forecast-div h3 {
+                font-family: fantasy;
+                color: #F72585;
+            }
+            .weatherWeek {
+                margin-bottom: 1rem;
+            }
+            #weatherDay {
+                margin: 0 auto;
+                width: 700px;
+                text-align: center;
+                color: #05386b;
+            }
+            #forecast-day {
+                background-color: rgb(10, 39, 68);
+                color: #eee;
+                font-family: sans-serif;
+            }
+            #map {
+                min-width: 20em;
+                min-height: 25em;
+            }
+            .contact {
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+            }
+        }

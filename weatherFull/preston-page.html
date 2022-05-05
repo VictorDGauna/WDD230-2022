@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="Description" content="Assignment weather site Preston Idaho for Victor Daniel Gauna in WDD 230: Web Frontend Development at Brigham Young University - Idaho" />
+    <link rel="stylesheet" href="../weatherFull/css/normalize.css copy/css/normalize.css" />
+    <link rel="stylesheet" href="../weatherFull/css/small.css" />
+    <link rel="stylesheet" href="../weatherFull/css/medium.css" />
+    <link rel="stylesheet" href="../weatherFull/css/large.css" />
+    <link rel="icon" href="../weatherFull/images/whatwonderfulweather.png" title="v iconos" type="image/x-icon" />
+    <title>What Wonderfull Weather</title>
+</head>
+
+<body>
+    <header>
+        <div class="box-icon">
+            <img class="icon-header" src="../weatherFull/images/whatwonderfulweather.png" alt="icon-header" />
+            <div class="text-box">
+                <h1>What Wonderfull Weather</h1>
+                <h3>Start Your Day</h3>
+            </div>
+        </div>
+    </header>
+    <nav class="clearfix">
+        <button id="menuBtn">&#9776; Menu</button>
+        <ul id="primaryNav">
+            <li>
+                <a href="../index.html">Home</a>
+            </li>
+            <li class="active">
+                <a href="#">Preston</a>
+            </li>
+            <li>
+                <a href="#">Soda Spring</a>
+            </li>
+            <li>
+                <a href="#">Fish Haven</a>
+            </li>
+            <li>
+                <a href="#">Storm Center</a>
+            </li>
+            <li>
+                <a href="#">Gallery</a>
+            </li>
+        </ul>
+    </nav>
+
+    <main>
+        <div class="announce">Preston Pancakes in the Park! 9:00 a.m. Saturday at the city park pavilion</div>
+
+        <h2>Preston Town</h2>
+
+        <section class="banner">
+            <img src="../weatherFull/images/BeautifulCacheValley.jpg" alt="valley" loading="lazy" class="banner-img">
+            <div class="weatherSumary">
+                <h3>Weather Summary</h3>
+                <ul>
+                    <li>Currently: Cloudy</li>
+                    <li>High: 67 °F</li>
+                    <li>Wind Chill: °F</li>
+                    <li>Humidity: 42%</li>
+                    <li>Wind Speed: 3 mph</li>
+                </ul>
+
+
+            </div>
+
+
+        </section>
+        <section class="weatherWeek">
+            <h3>5 Day Forecast</h3>
+            <table id="weatherDay">
+                <thead>
+                    <tr id="forecast-day">
+                        <th>Monday</th>
+                        <th>Tuesday</th>
+                        <th>Wednesday</th>
+                        <th>Thursday</th>
+                        <th>Friday</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>
+                            <img loading="lazy" width="50px" src="../weatherFull/images/symbols_weather_clear_sunny.jpg" alt="">
+                            <br>
+                            <span id="high-1">71 °F</span>
+                        </td>
+                        <td>
+                            <img loading="lazy" width="50px" src="../weatherFull/images/symbols_weather_clear_sunny.jpg" alt="">
+                            <br>
+                            <span id="high-2">76 °F</span>
+                        </td>
+                        <td>
+                            <img loading="lazy" width="50px" src="../weatherFull/images/symbols_weather_clear_sunny.jpg" alt="">
+                            <br>
+                            <span id="high-3">82 °F</span>
+                        </td>
+                        <td>
+                            <img loading="lazy" width="50px" src="../weatherFull/images/symbols_weather_clear_sunny.jpg" alt="">
+                            <br>
+                            <span id="high-4">70 °F</span>
+                        </td>
+                        <td>
+                            <img loading="lazy" width="50px" src="../weatherFull/images/symbols_weather_clear_sunny.jpg" alt="">
+                            <br>
+                            <span id="high-5">76 °F</span>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+        <section class="article">
+            <img src="../weatherFull/images/gases-invernaderos.jpg" alt="" id="article-img">
+
+            <h3> Concern over new greenhouse gas record </h3>
+            <p> The World Meteorological Organization (WMO ) has announced a new record for greenhouse gases in 2020 , exceeding the annual rate recorded in the average for the period 2011-2020. This has been communicated by the United Nations body in its
+                annual report on greenhouse gases for the last 12 months. They claim that the amount of Co2 , the most important greenhouse gas, has reached an average of 413 parts per million in the atmosphere, with peaks of 420 . It must be remembered
+                that only five years ago they did not exceed 400. <a href="http://www.clima.com/noticias/preocupacion-por-el-nuevo-record-de-gases-de-efecto-invernadero">Clima.com </a> </p>
+
+        </section>
+        <section class="contact">
+            <iframe id="map" src="https://maps.google.com/maps?q=Preston%20Idaho&t=&z=13&ie=UTF8&iwloc=&output=embed">
+            </iframe>
+            <div class="contact-us">
+                <h4>Contact Us</h4>
+                <h3>123 Valparaiso Avenue</h3>
+                <h3>Cordoba Argentina</h3>
+                <h3>0800-222-1234</h3>
+                <h3>contact-us@whatwonderweather.com</h3>
+            </div>
+
+            <a href="https://www.embedgooglemap.net/en/"></a>
+        </section>
+    </main>
+    <footer>
+        <p id="box-footer">
+            &copy;<span id="currentYear"></span> | Victor Daniel Gauna | Argentina |
+            <a id="byui" href="https://www.byui.edu/online">BYUI</a> Online Learning |
+        </p>
+        <p>Last Updated: <span id="currentDate"></span></p>
+        <script src="../weather/js/currentDate"></script>
+    </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+    <script>
+        WebFont.load({
+            google: {
+                families: ["Lato", "Oswald"],
+            },
+        });
+    </script>
+    <script src="../weather/js/toggleMenu.js"></script>
+
+</body>
+
+</html>

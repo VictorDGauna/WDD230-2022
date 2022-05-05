@@ -1,0 +1,42 @@
+/* Medium Views ******************************/
+
+@media only screen and (min-width: 35rem) {
+    h1 {
+        font-size: 1.5rem;
+    }
+    /* Horizontal Menu Examples */
+    /* Flex *********************/
+    /* nav ul {
+        display: flex;
+    }
+    nav ul li {
+        flex: 1 2 100%;
+        /* Grid *********************
+        grid-template-columns: repeat(auto-fill, minmax(130px, 1fr));
+    }*/
+    nav button {
+        display: none;
+    }
+    nav ul#primaryNav {
+        display: flex;
+        justify-content: center;
+        padding: 0 3em;
+        /*margin-left: 2vw;*/
+        /*border-left: 1px solid rgba(0, 0, 0, 0.3);*/
+    }
+    nav ul li a {
+        border: none;
+        /*border-right: 1px solid rgba(0, 0, 0, 0.2);*/
+    }
+}
+
+
+/*******************************************************/
+
+nav a {
+    font-size: 1rem;
+}
+
+main {
+    grid-template-columns: 1fr;
+}

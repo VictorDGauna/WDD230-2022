@@ -1,0 +1,258 @@
+/* Prevent adjustments of font size after orientation changes in IE on Windows Phone and in iOS.  */
+
+html {
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+}
+
+
+/*----------- apply a natural box layout model to all elements --------------*/
+
+* {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+}
+
+.announce {
+    display: none;
+    height: auto;
+    font-size: 20px;
+    padding: 1rem;
+    position: fixed;
+    top: 0;
+    left: 30%;
+    background-color: orange;
+    color: #000;
+}
+
+header div {
+    display: none;
+}
+
+h1,
+h2,
+h3 {
+    font-family: 'Lato', sans-serif;
+}
+
+p {
+    font-family: 'Oswald', sans-serif;
+}
+
+header,
+footer {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    background-color: #4361ee;
+    color: aliceblue;
+}
+
+.box-icon {
+    display: flex;
+    text-align: center;
+    align-items: center;
+    margin: 0;
+}
+
+.box-icon h3 {
+    color: #b5179e;
+}
+
+.icon-header {
+    width: 350px;
+}
+
+nav button {
+    margin: .2rem 2vw;
+    background: transparent;
+    border: none;
+    font-size: 2rem;
+    color: #555;
+}
+
+nav {
+    text-align: center;
+    box-shadow: 0 2px 15px gray;
+    margin: 0 3.5em;
+    background-color: #4589ef;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+nav ul li a {
+    display: block;
+    color: #fff;
+    text-align: center;
+    font-style: bold;
+    padding: 1rem;
+    text-decoration: none;
+    font-size: 1rem;
+    background: linear-gradient(90deg, transparent, rgb(235, 84, 159), transparent) top / var( --d, 0) 10px no-repeat;
+    transition: 0.5s;
+}
+
+nav ul li a:hover {
+    background-color: #bbb;
+    color: #021a08;
+    --d: 75%;
+}
+
+nav ul li.active a {
+    color: rgb(226, 71, 92);
+}
+
+nav ul {
+    display: none;
+}
+
+nav ul.open {
+    display: block;
+}
+
+nav ul.open li a:hover {
+    background-color: #bbb;
+    color: #021a08;
+    --d: 75%;
+}
+
+main {
+    margin: 0 3.5em;
+}
+
+main h2 {
+    text-align: center;
+}
+
+.banner {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1rem;
+}
+
+.banner-img {
+    width: 100%;
+    max-height: 17rem;
+}
+
+.weatherSumary {
+    margin-top: .3rem;
+    width: 100%;
+    text-align: center;
+    height: 10rem;
+    background: rgba(0, 0, 0, 0.8);
+    color: azure;
+}
+
+.weatherSumary:hover {
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.weatherSumary ul {
+    padding: 0;
+}
+
+.weatherSumary ul li {
+    list-style: none;
+    border-style: solid;
+    border-width: 1px;
+    border-left: none;
+    border-right: none;
+}
+
+.weatherSumary ul li:hover {
+    background-color: rgb(185, 21, 21);
+    transform: translateX(10px);
+}
+
+.weatherWeek {
+    display: none;
+}
+
+.weatherWeek h3 {
+    text-align: center;
+}
+
+.article {
+    display: block;
+    margin: auto 10%;
+    padding: 10px;
+    border: 1px solid #000;
+    color: #05386B;
+    background-color: beige;
+    border-radius: 1em;
+}
+
+.article img {
+    float: right;
+    max-width: 45%;
+    max-height: 45%;
+}
+
+.contact {
+    display: flex;
+    flex-direction: column;
+    margin: 15px 10% 15px 10%;
+    padding: 10px;
+    border-radius: 1rem;
+    text-align: left;
+    color: #eee;
+    background-color: #05386b;
+}
+
+#map {
+    max-width: 15em;
+    max-height: 25em;
+    margin: auto 5%;
+    float: left;
+}
+
+.contact-us {
+    grid-column: 2;
+    margin: auto;
+}
+
+.contact-us h4 {
+    text-align: center;
+}
+
+
+/*-----------------Clearfix: force an element not to collapse-------*/
+
+.clearfix {
+    font-size: .9em;
+    letter-spacing: 1pt;
+    list-style: none;
+    text-align: center;
+    padding: 0;
+}
+
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.clearfix a {
+    display: block;
+    padding: 0.75rem;
+    text-align: center;
+    text-decoration: none;
+    color: white;
+    font-weight: 100;
+}
+
+
+/* Small/Phone View ***************/
