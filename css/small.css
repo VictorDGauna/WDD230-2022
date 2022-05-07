@@ -6,7 +6,7 @@
     
     h1 {
         font-family: "PT Sans";
-        font-size: xx-larger;
+        font-size: xx-large;
     }
     
     h2,
@@ -22,7 +22,7 @@
     a {
         color: azure;
         text-decoration: none;
-        font-size: medium;
+        font-size: small;
     }
     
     a:hover {
@@ -49,6 +49,7 @@
     }
     
     main {
+        width: 100%;
         margin: 0;
         padding: 0;
     }
