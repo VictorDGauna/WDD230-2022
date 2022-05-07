@@ -1,12 +1,12 @@
     body {
         /*margin: 1rem 10% 1rem 10%;*/
-        font-size: 18px;
         padding: 0;
         background: linear-gradient(to right, #f64f59, #c471ed, #12c2e9);
     }
     
     h1 {
         font-family: "PT Sans";
+        font-size: xx-larger;
     }
     
     h2,
@@ -17,12 +17,12 @@
     p,
     a {
         font-family: 'Josefin Sans', sans-serif;
-        font-size: xx-small;
     }
     
     a {
         color: azure;
         text-decoration: none;
+        font-size: medium;
     }
     
     a:hover {
@@ -39,7 +39,6 @@
         text-align: center;
         background-color: aqua;
         padding: 1rem;
-        border-radius: 20px;
     }
     
     header img {
@@ -47,4 +46,13 @@
         max-width: 240px;
         border-radius: 2ch;
         box-shadow: 0 0 30px orange;
+    }
+    
+    main {
+        margin: 0;
+        padding: 0;
+    }
+    
+    main h2 {
+        padding-left: 1rem;
     }

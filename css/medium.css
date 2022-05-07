@@ -7,4 +7,11 @@
         float: right;
         max-width: 240px;
     }
+    li a {
+        font-size: large
+    }
+    header,
+    footer {
+        border-radius: 1rem;
+    }
 }
