@@ -18,6 +18,14 @@ body {
     margin: 0;
 }
 
+.fridayBanner {
+    font-family: "Koulen";
+    font-size: 18px;
+    text-align: center;
+    background-color: orange;
+    color: #fff;
+}
+
 .announce {
     display: none;
     height: auto;
