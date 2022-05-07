@@ -33,38 +33,14 @@
             .article {
                 margin: 0;
             }
-            .forecast-div {
-                display: block;
-                text-align: center;
-                margin: 3% auto;
-            }
-            .forecast-div h3 {
-                font-family: fantasy;
-                color: #F72585;
-            }
-            .weatherWeek {
-                display: block;
-                margin: 0;
-                margin-bottom: 1rem;
-            }
-            .weatherWeek h3 {
-                text-align: center;
+            .contact {
+                font-size: larger;
             }
             #weatherDay {
-                margin: 0 auto;
-                width: 700px;
-                text-align: center;
-                color: #05386b;
+                justify-content: space-around;
             }
             #forecast-day {
-                justify-content: space-around;
-                background-color: rgb(10, 39, 68);
-                color: #eee;
-                font-family: sans-serif;
-            }
-            #map {
-                min-width: 20em;
-                min-height: 25em;
+                width: 150px;
             }
             .contact {
                 display: grid;

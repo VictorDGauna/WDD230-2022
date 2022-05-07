@@ -28,6 +28,19 @@
         border: none;
         /*border-right: 1px solid rgba(0, 0, 0, 0.2);*/
     }
+    header div {
+        display: block;
+    }
+    #forecast-day {
+        width: 30%;
+    }
+    .contact {
+        font-size: medium;
+    }
+    #map {
+        min-width: 20em;
+        min-height: 25em;
+    }
 }
 
 
