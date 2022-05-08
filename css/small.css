@@ -35,7 +35,7 @@
     
     header,
     footer {
-        width: 100%;
+        width: auto;
         text-align: center;
         background-color: aqua;
         padding: 1rem;
@@ -49,9 +49,8 @@
     }
     
     main {
-        width: 100%;
-        margin: 0;
-        padding: 0;
+        width: auto;
+        margin: 1rem 5% 1rem 5%;
     }
     
     main h2 {

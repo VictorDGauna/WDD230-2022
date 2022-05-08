@@ -1,6 +1,7 @@
 @media (min-width: 30.5em) {
     body {
         margin: 1rem 20% 1rem 20%;
+        align-items: center;
     }
     header img {
         margin-top: 3rem;
@@ -12,6 +13,13 @@
     }
     header,
     footer {
+        max-width: 52rem;
+        margin: 1rem 20% 1rem 20%;
         border-radius: 1rem;
+    }
+    main h2,
+    ul,
+    hr {
+        margin: 1rem 20% 1rem 20%;
     }
 }
