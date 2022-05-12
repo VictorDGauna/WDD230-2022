@@ -10,14 +10,17 @@
     <link rel="stylesheet" href="../weatherFull/css/small.css" />
     <link rel="stylesheet" href="../weatherFull/css/medium.css" />
     <link rel="stylesheet" href="../weatherFull/css/large.css" />
-    <link rel="icon" href="../weatherFull/images/whatwonderfulweather.png" title="v iconos" type="image/x-icon" />
+    <link rel="icon" href="../weatherFull/images/logo3.png" title="v iconos" type="image/x-icon" />
     <title>What Wonderfull Weather</title>
 </head>
 
 <body>
     <header>
         <div class="box-icon">
-            <img class="icon-header" src="../weatherFull/images/whatwonderfulweather.png" alt="icon-header" />
+            <picture>
+                <img class="icon-header" src="../weatherFull/images/whatwonderfulweather.png" alt="icon-header" />
+
+            </picture>
             <div class="text-box">
                 <h1>What Wonderfull Weather</h1>
                 <h3>Start Your Day</h3>
@@ -53,7 +56,14 @@
         <h2>Preston Town</h2>
 
         <section class="banner">
-            <img src="../weatherFull/images/BeautifulCacheValley.jpg" alt="valley" loading="lazy" class="banner-img">
+            <picture>
+
+                <source media="(min-width:500px) and (max-width:799px)" srcset="images/wdd230_image_franklinOriginal-MEDIUM.jpeg">
+                <source media="(min-width:800px)" srcset="images/wdd230_image_franklin-LARGE.jpeg">
+
+                <img src="../weatherFull/images/wdd230_image_franklinOriginal-SMALL.jpeg" alt="banner" class="banner-img">
+
+            </picture>
             <div class="weatherSumary">
                 <h3>Weather Summary</h3>
                 <ul>
