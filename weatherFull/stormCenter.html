@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="Description" content="Assignment weather site Preston Idaho for Victor Daniel Gauna in WDD 230: Web Frontend Development at Brigham Young University - Idaho" />
+    <link rel="stylesheet" href="../weatherFull/css/normalize.css" />
+    <link rel="stylesheet" href="../weatherFull/css/small.css" />
+    <link rel="stylesheet" href="../weatherFull/css/medium.css" />
+    <link rel="stylesheet" href="../weatherFull/css/large.css" />
+    <link rel="icon" href="../weatherFull/images/logo3.png" title="v iconos" type="image/x-icon" />
+    <title>What Wonderfull Weather</title>
+</head>
+
+<body>
+    <header>
+        <div class="box-icon">
+            <picture>
+                <img class="icon-header" src="../weatherFull/images/whatwonderfulweather.png" alt="icon-header" />
+
+            </picture>
+            <div class="text-box">
+                <h1>What Wonderfull Weather</h1>
+                <h3>Start Your Day</h3>
+            </div>
+        </div>
+    </header>
+    <nav class="clearfix">
+        <button id="menuBtn">&#9776; Menu</button>
+        <ul id="primaryNav">
+            <li>
+                <a href="../index.html">Home</a>
+            </li>
+            <li>
+                <a href="#">Preston</a>
+            </li>
+            <li>
+                <a href="#">Soda Spring</a>
+            </li>
+            <li>
+                <a href="#">Fish Haven</a>
+            </li>
+            <li class="active">
+                <a href="#">Storm Center</a>
+            </li>
+            <li>
+                <a href="#">Gallery</a>
+            </li>
+        </ul>
+    </nav>
+
+    <main>
+
+        <h2>Report the Storm</h2>
+        <hr>
+        <form method="GET" action="thanks.html">
+            <fieldset>
+                <legend>
+                    <h3>Your Information</h3>
+                </legend>
+                <label class="personalInfo">
+            *Full Name: <input type="text" name="fullname" title="Please have at least 3 letters entered" pattern="^[a-zA-Z\s\-\.]{3,}$" required>
+            </label>
+                <label class="personalInfo">
+            Email: <input type="email" name="email" placeholder="info@whatweather.com">
+            </label>
+                <label class="personalInfo">
+            *Phone: <input type="tel" name="phone" title="Please write 10 numbers or more" placeholder="123-456-7890" required>
+            </label>
+                <label class="personalInfo">
+            *Zip Code: <input type="number" name="zipcode" required>
+            </label>
+            </fieldset>
+            <fieldset>
+                <legend>
+                    <h3>Storm Information</h3>
+                </legend>
+                <label class="storm-info">
+            Storm Date: <input type="date" name="storm_date">
+            </label>
+                <label class="storm-info">
+            Storm Type: <input list="storm_type" name="storm_type">
+              <datalist id="storm_type">
+                <option value="Flash Flood"></option>
+                <option value="Hail"></option>
+                <option value="Hurricane"></option>
+                <option value="Thunderstorm"></option>
+                <option value="Tornado"></option>
+              </datalist>
+            </label>
+                <label class="storm-info">
+              Storm Severity: <input type="range" name="storm_severity" min="1" max="10" step="1" value="5" oninput="severity(this.value)" onchange="severity(this.value)">
+              <span id="rangeSeverity">5</span>
+            </label>
+                <label class="storm-info">
+              Storm Region: <select name="storm_region" id="storm_region">
+              <option selected disabled>Select Region....</option>
+              <option value="Preston">Preston</option>
+              <option value="Soda_Springs">Soda Springs</option>
+              <option value="Fish_Haven">Fish Haven</option>
+              </select>
+            </label>
+
+            </fieldset>
+
+            <fieldset>
+                <legend>
+                    <h3>Additional Information</h3>
+                </legend>
+                <div>User in Danger Level:</div>
+                <label class="radios"><input type="radio" name="user_level" value="yes">
+              <span class="option">Yes</span>
+              </label>
+                <label class="radios"><input type="radio" name="user_level" value="maybe">
+              <span class="option">Maybe</span>
+              </label>
+                <label class="radios"><input type="radio" name="user_level" value="no">
+              <span class="option">No</span>
+              </label>
+                <label class="top">Comments: </label>
+                <textarea name="comments" id="comments">
+              </textarea>
+            </fieldset>
+            <input class="submit_button" type="submit" value="Report this Storm">
+        </form>
+        <section class="contact">
+            <iframe id="map" src="https://maps.google.com/maps?q=Preston%20Idaho&t=&z=13&ie=UTF8&iwloc=&output=embed">
+            </iframe>
+            <div class="contact-us">
+                <h4>&#127760; Contact Us</h4>
+                <h3>&#128640; 123 Valparaiso Avenue</h3>
+                <h3>&#127968; Cordoba Argentina</h3>
+                <h3>&#9742; 0800-222-1234</h3>
+                <h3>&#128232; contact-us@whatwonderweather.com</h3>
+            </div>
+
+            <a href="https://www.embedgooglemap.net/en/"></a>
+        </section>
+    </main>
+    <footer>
+        <p id="box-footer">
+            &copy;<span id="currentYear"></span> | Victor Daniel Gauna | Argentina |
+            <a id="byui" href="https://www.byui.edu/online">BYUI</a> Online Learning |
+        </p>
+        <p>Last Updated: <span id="currentDate"></span></p>
+        <script src="../weatherFull/js/currentDate.js"></script>
+    </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+    <script>
+        WebFont.load({
+            google: {
+                families: ["Lato", "Oswald", "Koulen"],
+            },
+        });
+    </script>
+    <script src="../weatherFull/js/toggleMenu.js"></script>
+
+
+</body>
+
+</html>
