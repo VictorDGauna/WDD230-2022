@@ -285,7 +285,9 @@ main hr {
 }
 
 form {
-    background-color: #000023;
+    /* background-color: #000023;*/
+    background: rgb(2, 0, 36);
+    background: linear-gradient(90deg, rgba(2, 0, 36, 1) 32%, rgba(0, 212, 255, 1) 100%);
     color: #eee;
     display: flex;
     flex-wrap: wrap;
