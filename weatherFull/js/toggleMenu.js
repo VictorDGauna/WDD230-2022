@@ -4,4 +4,7 @@ function toggleMenu() {
 }
 const x = document.getElementById("menuBtn")
 x.onclick = toggleMenu;
-/*--------------------Friday Banner-------------*/
+/*-------------------- sverityStorm-range-------------*/
+function severity(rating) {
+    document.getElementById("value").innerHTML = rating;
+}
