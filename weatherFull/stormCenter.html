@@ -61,7 +61,7 @@
                     <h3>Your Information</h3>
                 </legend>
                 <label class="personalInfo">
-            *Full Name: <input type="text" name="fullname" title="Please have at least 3 letters entered" pattern="^[a-zA-Z\s\-\.]{3,}$" required>
+            *Full Name: <input type="text" name="fullname" title="Please have at least 5 letters entered" placeholder="abcdef" pattern="^[a-zA-Z\s\-\.]{5,}$" required>
             </label>
                 <label class="personalInfo">
             Email: <input type="email" name="email" placeholder="info@whatweather.com">
@@ -138,9 +138,10 @@
                     <textarea name="comments" id="comments">
                     </textarea>
                 </label>
+                <input class="submit_button" type="submit" value="Report this Storm">
 
             </fieldset>
-            <input class="submit_button" type="submit" value="Report this Storm">
+
         </form>
         <section class="contact">
             <iframe id="map" src="https://maps.google.com/maps?q=Preston%20Idaho&t=&z=13&ie=UTF8&iwloc=&output=embed">

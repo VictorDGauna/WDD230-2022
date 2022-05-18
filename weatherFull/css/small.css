@@ -294,10 +294,22 @@ form {
     border-radius: 2ch;
 }
 
+main {
+    justify-content: center;
+    align-items: center;
+}
+
+main form {
+    display: flex;
+    flex-direction: column;
+}
+
 main form fieldset {
     border-style: none;
     display: flex;
     flex-direction: column;
+    text-align: center;
+    font-size: x-large;
 }
 
 label {

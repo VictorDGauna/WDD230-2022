@@ -47,4 +47,7 @@
                 grid-template-columns: 1fr 1fr;
                 margin: 1rem 0;
             }
+            main {
+                margin: 1rem 15% 1rem 15%;
+            }
         }
