@@ -1,6 +1,6 @@
 /* Medium Views ******************************/
 
-@media only screen and (min-width: 35rem) {
+@media only screen and (min-width: 28rem) {
     h1 {
         font-size: 1.5rem;
     }
@@ -40,6 +40,38 @@
     #map {
         min-width: 20em;
         min-height: 25em;
+    }
+    /*
+    .cards {
+        flex-direction: column;
+    }
+    .cities {
+        width: 100%;
+        height: auto;
+    }
+    .containI {
+        flex-direction: row;
+    }
+    .containP {
+        display: block;
+    }*/
+    .cards {
+        flex-direction: column;
+    }
+    .cities {
+        width: auto;
+        height: auto;
+    }
+    .containI {
+        flex-direction: row;
+        justify-content: center;
+        justify-items: center;
+        align-items: center;
+        align-content: center;
+    }
+    .containI img {
+        float: right;
+        width: 400px;
     }
 }
 

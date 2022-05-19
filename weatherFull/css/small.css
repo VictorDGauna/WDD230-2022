@@ -362,6 +362,56 @@ label:hover {
 }
 
 
+/*--------------------home-page------------------*/
+
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    justify-items: center;
+}
+
+.cities {
+    margin-bottom: 1rem;
+    background-color: #FFD24C;
+    border-radius: 1ch;
+    text-align: center;
+    max-width: auto;
+    height: auto;
+}
+
+.cities h2 {
+    font-size: large;
+}
+
+.cities q {
+    font-size: small;
+}
+
+.containI {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1ch;
+}
+
+.containP {
+    margin: 1rem;
+    padding: 1rem;
+    text-align: center;
+    font-size: medium;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #eee;
+    background-color: #000000;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+.cities img {
+    width: 250px;
+    height: 150px;
+    margin: 0 .5rem 0 .5rem;
+}
+
+
 /*-----------------Clearfix: force an element not to collapse-------*/
 
 .clearfix {
