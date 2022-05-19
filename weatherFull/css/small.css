@@ -421,11 +421,19 @@ label:hover {
 .wireframe {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: center;
+}
+
+.views {
+    background-color: #FFD24C;
+    border-radius: 1ch;
+    margin: 0.5rem 1rem;
+    text-align: center;
+    padding: 1rem;
 }
 
 .views img {
-    max-width: 300px;
+    max-width: 200px;
     height: auto;
 }
 
