@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="Description" content="Assignment weather site Preston Idaho for Victor Daniel Gauna in WDD 230: Web Frontend Development at Brigham Young University - Idaho" />
+    <link rel="stylesheet" href="../weatherFull/css/normalize.css" />
+    <link rel="stylesheet" href="../weatherFull/css/small.css" />
+    <link rel="stylesheet" href="../weatherFull/css/medium.css" />
+    <link rel="stylesheet" href="../weatherFull/css/large.css" />
+    <link rel="icon" href="../weatherFull/images/logo3.png" title="v iconos" type="image/x-icon" />
+    <title>What Wonderfull Weather</title>
+</head>
+
+<body>
+    <header>
+        <div class="box-icon">
+            <picture>
+                <img class="icon-header" src="../weatherFull/images/whatwonderfulweather.png" alt="icon-header" />
+
+            </picture>
+            <div class="text-box">
+                <h1>What Wonderfull Weather</h1>
+                <h3>Start Your Day</h3>
+            </div>
+        </div>
+    </header>
+    <nav class="clearfix">
+        <button id="menuBtn">&#9776; Menu</button>
+        <ul id="primaryNav">
+            <li>
+                <a href="../index.html">Home</a>
+            </li>
+            <li class="active">
+                <a href="#">Preston</a>
+            </li>
+            <li>
+                <a href="#">Soda Spring</a>
+            </li>
+            <li>
+                <a href="#">Fish Haven</a>
+            </li>
+            <li>
+                <a href="../weatherFull/stormCenter.html">Storm Center</a>
+            </li>
+            <li>
+                <a href="../gallery-lesson.html">Gallery</a>
+            </li>
+        </ul>
+    </nav>
+
+    <main>
+        <h2>Wireframe</h2>
+
+        <section class="wireframe">
+            <div class="views">
+                <h3>Phone-view</h3>
+                <img src="/weatherFull/images/phone-view.png" alt="">
+            </div>
+            <div class="views">
+                <h3>Medium-view</h3>
+                <img src="/weatherFull/images/medium-view.png" alt="">
+            </div>
+            <div class="views">
+                <h3>Large-view</h3>
+                <img src="/weatherFull/images/large-view.png" alt="">
+            </div>
+        </section>
+
+
+
+    </main>
+    <footer>
+        <p id="box-footer">
+            &copy;<span id="currentYear"></span> | Victor Daniel Gauna | Argentina |
+            <a id="byui" href="https://www.byui.edu/online">BYUI</a> Online Learning |
+        </p>
+        <p>Last Updated: <span id="currentDate"></span></p>
+        <script src="../weatherFull/js/currentDate.js"></script>
+    </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+    <script>
+        WebFont.load({
+            google: {
+                families: ["Lato", "Oswald", "Koulen"],
+            },
+        });
+    </script>
+    <script src="../weatherFull/js/toggleMenu.js"></script>
+
+
+</body>
+
+</html>

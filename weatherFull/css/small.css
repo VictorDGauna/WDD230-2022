@@ -416,6 +416,20 @@ label:hover {
 }
 
 
+/*---------------   VIEWS WIREFRAME     --------------*/
+
+.wireframe {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.views img {
+    max-width: 300px;
+    height: auto;
+}
+
+
 /*-----------------Clearfix: force an element not to collapse-------*/
 
 .clearfix {
