@@ -1,14 +1,14 @@
-const apiURL = 'http://api.openweathermap.org/data/2.5/forecast?id=5604473&appid=dce9526fd98f1b67e5a066b73747e133';
+//const apiURL = 'http://api.openweathermap.org/data/2.5/forecast?id=5604473&appid=dce9526fd98f1b67e5a066b73747e133';
 
-fetch(apiURL)
+fetch('http://api.openweathermap.org/data/2.5/forecast?id=5604473&appid=dce9526fd98f1b67e5a066b73747e133')
     .then((response) => response.json())
     .then((jsObject) => {
         console.log(jsObject);
         document.getElementById('desc').textContent = jsObject.list[0].weather[0].description;
         document.getElementById('High').textContent = jsObject.list[0].main.temp_kf;
         document.getElementById('wind').textContent = jsObject.list[0].wind.deg;
-        document.getElementById('hum').textContent = jsObject.list[0].main.humidity + '°F';
-        document.getElementById('speed').textContent = jsObject.list[0].wind.speed + '°F';
+        document.getElementById('hum').textContent = jsObject.list[0].main.humidity;
+        document.getElementById('speed').textContent = jsObject.list[0].wind.speed;
         document.getElementById('high1').textContent = jsObject.list[1].main.temp + '°F';
         document.getElementById('high2').textContent = jsObject.list[9].main.temp + '°F';
         document.getElementById('high3').textContent = jsObject.list[17].main.temp + '°F';
