@@ -69,8 +69,15 @@
         align-items: center;
         align-content: center;
     }
-    .containI img {
-        float: right;
+    .i2 {
+        flex-direction: row-reverse;
+        justify-content: center;
+        justify-items: center;
+        align-items: center;
+        align-content: center;
+    }
+    .cities img {
+        float: left;
         width: 400px;
     }
 }
