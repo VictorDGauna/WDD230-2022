@@ -5,7 +5,7 @@ fetch('http://api.openweathermap.org/data/2.5/forecast?id=5604473&appid=dce9526f
     .then((jsObject) => {
         console.log(jsObject);
         document.getElementById('desc').textContent = jsObject.list[0].weather[0].description;
-        document.getElementById('High').textContent = jsObject.list[0].main.temp_kf;
+        document.getElementById('High').textContent = jsObject.list[0].main.temp;
         document.getElementById('wind').textContent = jsObject.list[0].wind.deg;
         document.getElementById('hum').textContent = jsObject.list[0].main.humidity;
         document.getElementById('speed').textContent = jsObject.list[0].wind.speed;
