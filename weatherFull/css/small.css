@@ -376,7 +376,7 @@ label:hover {
     background-color: #FFD24C;
     border-radius: 1ch;
     text-align: center;
-    max-width: auto;
+    max-width: 100%;
     height: auto;
 }
 
