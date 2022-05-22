@@ -29,6 +29,6 @@ fetch('http://api.openweathermap.org/data/2.5/forecast?id=5604473&appid=dce9526f
         document.getElementById('icon3').setAttribute('src', imagesrc3); // focus on the setAttribute() method
         document.getElementById('icon4').setAttribute('src', imagesrc4); // focus on the setAttribute() method
         document.getElementById('icon5').setAttribute('src', imagesrc5); // focus on the setAttribute() method
-        document.getElementById('icon').setAttribute('alt', desc);
+        document.getElementById('icon1').setAttribute('alt', desc);
 
     });
