@@ -310,7 +310,7 @@ main form fieldset {
     display: flex;
     flex-direction: column;
     text-align: center;
-    font-size: x-large;
+    font-size: larger;
 }
 
 label {
@@ -320,6 +320,7 @@ label {
 input {
     border-radius: 2ch;
     box-shadow: 5px 5px 15px 5px #000000;
+    max-width: 7rem;
 }
 
 #comments {
@@ -328,8 +329,10 @@ input {
 }
 
 .submit_button {
+    max-width: 7rem;
     max-height: 2rem;
     margin: 1rem;
+    font-size: small;
 }
 
 .submit_button:hover {
