@@ -1,0 +1,96 @@
+/* Medium Views ******************************/
+
+@media only screen and (min-width: 28rem) {
+    h1 {
+        font-size: 1.5rem;
+    }
+    /* Horizontal Menu Examples */
+    /* Flex *********************/
+    /* nav ul {
+        display: flex;
+    }
+    nav ul li {
+        flex: 1 2 100%;
+        /* Grid *********************
+        grid-template-columns: repeat(auto-fill, minmax(130px, 1fr));
+    }*/
+    nav button {
+        display: none;
+    }
+    nav ul#primaryNav {
+        display: flex;
+        justify-content: center;
+        padding: 0 3em;
+        /*margin-left: 2vw;*/
+        /*border-left: 1px solid rgba(0, 0, 0, 0.3);*/
+    }
+    nav ul li a {
+        border: none;
+        /*border-right: 1px solid rgba(0, 0, 0, 0.2);*/
+    }
+    header div {
+        display: block;
+    }
+    #forecast-day {
+        width: 30%;
+    }
+    .contact {
+        font-size: medium;
+    }
+    #map {
+        min-width: 20em;
+        min-height: 25em;
+    }
+    /*
+    .cards {
+        flex-direction: column;
+    }
+    .cities {
+        width: 100%;
+        height: auto;
+    }
+    .containI {
+        flex-direction: row;
+    }
+    .containP {
+        display: block;
+    }*/
+    .cards {
+        flex-direction: column;
+    }
+    .cities,
+    .cities-sodaS,
+    .cities-fish {
+        width: auto;
+        height: auto;
+    }
+    .containI {
+        flex-direction: row;
+        justify-content: center;
+        justify-items: center;
+        align-items: center;
+        align-content: center;
+    }
+    .i2 {
+        flex-direction: row-reverse;
+        justify-content: center;
+        justify-items: center;
+        align-items: center;
+        align-content: center;
+    }
+    .cities img {
+        float: left;
+        width: 400px;
+    }
+}
+
+
+/*******************************************************/
+
+nav a {
+    font-size: 1rem;
+}
+
+main {
+    grid-template-columns: 1fr;
+}

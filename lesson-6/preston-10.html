@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
+    <meta name="Description" content="Assignment weather site Preston Idaho for Victor Daniel Gauna in WDD 230: Web Frontend Development at Brigham Young University - Idaho" />
+    <link rel="stylesheet" href="../lesson-6/css/normalize.css" />
+    <link rel="stylesheet" href="../lesson-6/css/small.css" />
+    <link rel="stylesheet" href="../lesson-6/css/medium.css" />
+    <link rel="stylesheet" href="../lesson-6/css/large.css" />
+    <link rel="icon" href="../lesson-6/images/logo3.png" title="v iconos" type="image/x-icon" />
+    <title>What Wonderfull Weather</title>
+</head>
+
+<body>
+    <header>
+        <div class="box-icon">
+            <picture>
+                <img class="icon-header" src="../lesson-6/images/whatwonderfulweather.png" alt="icon-header" />
+
+            </picture>
+            <div class="text-box">
+                <h1>What Wonderfull Weather</h1>
+                <h3>Start Your Day</h3>
+            </div>
+        </div>
+    </header>
+    <nav class="clearfix">
+        <button id="menuBtn">&#9776; Menu</button>
+        <ul id="primaryNav">
+            <li>
+                <a href="../lesson-6/homePage.html">Home</a>
+            </li>
+            <li class="active">
+                <a href="#">Preston</a>
+            </li>
+            <li>
+                <a href="#">Soda Spring</a>
+            </li>
+            <li>
+                <a href="#">Fish Haven</a>
+            </li>
+            <li>
+                <a href="../lesson-6/stormCenter.html">Storm Center</a>
+            </li>
+            <li>
+                <a href="../gallery-lesson.html">Gallery</a>
+            </li>
+        </ul>
+    </nav>
+
+    <main>
+
+        <h2>Preston Town</h2>
+
+        <section class="banner">
+            <picture>
+
+                <source media="(min-width:500px) and (max-width:799px)" srcset="images/wdd230_image_franklinOriginal-MEDIUM.jpeg">
+                <source media="(min-width:800px)" srcset="images/wdd230_image_franklin-LARGE.jpeg">
+
+                <img src="../lesson-6/images/wdd230_image_franklinOriginal-SMALL.jpeg" alt="banner" class="banner-img">
+
+            </picture>
+            <div class="weatherSumary">
+                <h3>Weather Summary</h3>
+                <ul>
+                    <li>Currently: <span id="desc"></span></li>
+                    <li>High: <span id="High"></span> °F</li>
+                    <li>Wind Chill: <span id="wind"></span> °F</li>
+                    <li>Humidity: <span id="hum"></span>%</li>
+                    <li>Wind Speed: <span id="speed"></span> mph</li>
+                </ul>
+
+
+            </div>
+
+
+        </section>
+        <section class="weatherWeek">
+            <h3>5 Day Forecast</h3>
+            <div id="weatherDay">
+
+                <div id="forecast-day">
+                    <h3>Monday</h3>
+                    <!--<img loading="lazy" width="50" src="../lesson-6/images/symbols_weather_clear_sunny.jpg" alt="">-->
+                    <img src="" alt="" id="icon1">
+                    <span id="high1">71 °F</span>
+                </div>
+                <div id="forecast-day">
+                    <h3>Tuesday</h3>
+                    <img src="" alt="" id="icon2">
+                    <span id="high2">76 °F</span>
+                </div>
+                <div id="forecast-day">
+                    <h3>Wednesday</h3>
+                    <img src="" alt="" id="icon3">
+                    <span id="high3">82 °F</span>
+                </div>
+                <div id="forecast-day">
+                    <h3>Thursday</h3>
+                    <img src="" alt="" id="icon4">
+                    <span id="high4">70 °F</span>
+                </div>
+                <div id="forecast-day">
+                    <h3>Friday</h3>
+                    <img src="" alt="" id="icon5">
+                    <span id="high5">76 °F</span>
+                </div>
+
+            </div>
+        </section>
+        <section class="article">
+            <img src="../lesson-6/images/gases-invernaderos.jpg" alt="" id="article-img">
+
+            <h3> Concern over new greenhouse gas record </h3>
+            <p> The World Meteorological Organization (WMO ) has announced a new record for greenhouse gases in 2020 , exceeding the annual rate recorded in the average for the period 2011-2020. This has been communicated by the United Nations body in its
+                annual report on greenhouse gases for the last 12 months. They claim that the amount of Co2 , the most important greenhouse gas, has reached an average of 413 parts per million in the atmosphere, with peaks of 420 . It must be remembered
+                that only five years ago they did not exceed 400. <a href="http://www.clima.com/noticias/preocupacion-por-el-nuevo-record-de-gases-de-efecto-invernadero">Clima.com </a> </p>
+
+        </section>
+        <section class="contact">
+            <iframe id="map" src="https://maps.google.com/maps?q=Preston%20Idaho&t=&z=13&ie=UTF8&iwloc=&output=embed">
+            </iframe>
+            <div class="contact-us">
+                <h4>&#127760; Contact Us</h4>
+                <h3>&#128640; 123 Valparaiso Avenue</h3>
+                <h3>&#127968; Cordoba Argentina</h3>
+                <h3>&#9742; 0800-222-1234</h3>
+                <h3>&#128232; contact-us@whatwonderweather.com</h3>
+            </div>
+
+            <a href="https://www.embedgooglemap.net/en/"></a>
+        </section>
+    </main>
+    <footer>
+        <p id="box-footer">
+            &copy;<span id="currentYear"></span> | Victor Daniel Gauna | Argentina |
+            <a id="byui" href="https://www.byui.edu/online">BYUI</a> Online Learning |
+        </p>
+        <p>Last Updated: <span id="currentDate"></span></p>
+        <script src="../lesson-6/js/currentDate.js"></script>
+    </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+    <script>
+        WebFont.load({
+            google: {
+                families: ["Lato", "Oswald", "Koulen"],
+            },
+        });
+    </script>
+    <script src="../lesson-6/js/toggleMenu.js"></script>
+    <script src="../lesson-6/js/weatherapi.js"></script>
+
+</body>
+
+</html>

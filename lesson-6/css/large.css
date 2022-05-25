@@ -1,0 +1,99 @@
+        @media only screen and (min-width: 50em) {
+            .text-box {
+                display: flex;
+                flex-flow: column;
+            }
+            header h1 {
+                font-size: 2rem;
+            }
+            header,
+            footer {
+                display: flex;
+                flex-direction: row;
+                text-align: center;
+                align-items: center;
+                justify-content: center;
+                background-color: #4361ee;
+                color: aliceblue;
+            }
+            nav a {
+                font-size: 1.1rem;
+            }
+            .weatherSumary {
+                position: absolute;
+                top: 350px;
+                left: 13rem;
+                width: 15rem;
+            }
+            .article img {
+                float: right;
+                max-width: 20%;
+                max-height: 20%;
+            }
+            .article {
+                margin: 0;
+            }
+            .contact {
+                font-size: larger;
+            }
+            #weatherDay {
+                justify-content: space-around;
+            }
+            #forecast-day {
+                width: 150px;
+            }
+            .contact {
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                margin: 1rem 0;
+            }
+            main {
+                margin: 1rem 15% 1rem 15%;
+            }
+            .cards {
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                justify-items: center;
+            }
+            .cities {
+                margin-bottom: 1rem;
+                background-color: #FFD24C;
+                border-radius: 1ch;
+                text-align: center;
+                max-width: 300px;
+                height: auto;
+            }
+            .cities-sodaS,
+            .cities-fish {
+                font-size: x-large;
+                margin-bottom: 1rem;
+                padding: 1rem;
+                background-color: #FFD24C;
+                border-radius: 1ch;
+                text-align: center;
+                max-width: 100%;
+                height: auto;
+            }
+            .containI,
+            .i2 {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                margin-bottom: 1ch;
+            }
+            .containP {
+                padding: 0 4rem 0 4rem;
+            }
+            .cities img {
+                width: 16rem;
+                height: 150px;
+                margin: 0 .5rem 0 .5rem;
+            }
+            .cities-fish img,
+            .cities-sodaS img {
+                width: 90%;
+                height: 30%;
+                margin: 0 1rem 0 1rem;
+            }
+        }
