@@ -1,9 +1,7 @@
-
-
 //--------------------FUNCTION TOGGLE MENU--------------------------
 
 
-function toggleMenu() {document.getElementById("primaryNav").classList.toggle("hide")};
+function toggleMenu() { document.getElementById("primaryNav").classList.toggle("hide") };
 
 
 //-------------------END FUNCTION TOGGLE MENU--------------------
@@ -23,7 +21,7 @@ const imgOptions = {
 
 const loadImages = (image) => {
     image.setAttribute('src', image.getAttribute('data-src'));
-    image.onload = ()=> {image.removeAttribute('data-src')};
+    image.onload = () => { image.removeAttribute('data-src') };
 
 };
 
@@ -31,20 +29,19 @@ const loadImages = (image) => {
 
 if ('IntersectionObserver' in window) {
     const imgObserver = new IntersectionObserver((items, observer) => {
-        items.forEach((item)=>{
-            if(item.isIntersecting){
+        items.forEach((item) => {
+            if (item.isIntersecting) {
                 loadImages(item.target);
                 observer.unobserve(item.target);
             }
 
         });
     }, imgOptions);
-// loop through each img an check status and load if necesary
-    imagesToLoad.forEach((img)=>{
+    // loop through each img an check status and load if necesary
+    imagesToLoad.forEach((img) => {
         imgObserver.observe(img);
     });
-}
-else {
+} else {
     imagesToLoad.forEach((img) => {
         loadImages(img);
     });
@@ -52,5 +49,3 @@ else {
 }
 
 //-----------------------END LAZY LOAD FUNCTION------------------------------
-
-

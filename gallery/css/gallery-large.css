@@ -1,37 +1,28 @@
 /* 64em only is also 1028px when basefont is 16px*/
+
 @media only screen and (min-width: 60em) {
     /**------header section----**/
-    .header-picture{
+    .header-picture {
         display: flex;
         flex-flow: row;
     }
-    header h1{
+    header h1 {
         margin-top: 4rem;
     }
     /**--------end header section**/
-
-  
-   /**--------nav section---------**/
-    nav {
-        background-color:#b5179e;
+    /**--------nav section---------**/
+    nav a {
+        font-size: 1.1rem;
     }
-    nav button {display: none;}
-    
-    #primaryNav{
-        display: block;
+    nav button {
+        display: none;
     }
-    nav ul.hide{display:block;}
-    nav ul {margin-left: 2%;}
-
-    nav ul li {float: left;}
-
-    nav ul li a {
-        border:none;
-        border-right: 1px solid rgba(0, 0, 0,.3);
-        padding: .6rem 1rem;
+    #primaryNav {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
     }
     /**-------end nav section--------**/
-
     /**------main section--------**/
     main {
         height: auto;
@@ -39,21 +30,19 @@
     main h1 {
         color: blue;
         text-align: center;
-    } 
+    }
     main section {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
         margin-left: 3%;
-
-
     }
-    main section picture{
+    main section picture {
         margin-right: 2em;
         background-color: blueviolet;
         width: 300px;
         height: 400px;
     }
-    main section picture h3{
+    main section picture h3 {
         text-align: center;
         color: #eee;
     }
@@ -62,15 +51,15 @@
         height: 350px;
     }
     /**------end main section--------**/
-    
-
-    .contact-div{
+    .contact-div {
         display: flex;
-        flex-flow:row;
+        flex-flow: row;
     }
     #map {
         min-width: 20em;
         min-height: 25em;
     }
 }
-   /**end large/ 
+
+
+/**end large/
