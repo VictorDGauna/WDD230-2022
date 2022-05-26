@@ -16,6 +16,18 @@
                 background-color: #4361ee;
                 color: aliceblue;
             }
+            footer {
+                display: flex;
+                flex-direction: column;
+                text-align: center;
+                align-items: center;
+                justify-content: center;
+                background-color: #4361ee;
+                color: aliceblue;
+            }
+            footer {
+                padding: 0 14%;
+            }
             nav a {
                 font-size: 1.1rem;
             }
