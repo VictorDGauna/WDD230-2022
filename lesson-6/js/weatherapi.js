@@ -4,11 +4,14 @@ fetch('http://api.openweathermap.org/data/2.5/forecast?id=5604473&units=imperial
     .then((response) => response.json())
     .then((jsObject) => {
         console.log(jsObject);
+        t = jsObject.list[0].main.temp;
+        s = jsObject.list[0].wind.speed;
+        wc = 35, 74 + 0, 6215 * t - 35, 75 * s * 0, 16 + 0, 4275 * t * s * 0, 16;
         document.getElementById('desc').textContent = jsObject.list[0].weather[0].description;
-        document.getElementById('High').textContent = jsObject.list[0].main.temp;
-        document.getElementById('wind').textContent = jsObject.list[0].wind.deg;
+        document.getElementById('High').textContent = t;
+        document.getElementById('wind').textContent = wc;
         document.getElementById('hum').textContent = jsObject.list[0].main.humidity;
-        document.getElementById('speed').textContent = jsObject.list[0].wind.speed;
+        document.getElementById('speed').textContent = s;
         document.getElementById('high1').textContent = jsObject.list[1].main.temp + '°F';
         document.getElementById('high2').textContent = jsObject.list[9].main.temp + '°F';
         document.getElementById('high3').textContent = jsObject.list[17].main.temp + '°F';
