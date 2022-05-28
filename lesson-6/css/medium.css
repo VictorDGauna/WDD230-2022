@@ -31,7 +31,7 @@
     header div {
         display: block;
     }
-    #forecast-day {
+    #weatherDay div {
         width: 30%;
     }
     .contact {

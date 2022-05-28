@@ -51,7 +51,7 @@
             #weatherDay {
                 justify-content: space-around;
             }
-            #forecast-day {
+            #weatherDay div {
                 width: 150px;
             }
             .contact {
