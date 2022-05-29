@@ -57,12 +57,12 @@ fetch(url)
 
                 card1.setAttribute('class', 'cities-sodaS')
                 h3.textContent = citys[i].name;
-                q.textContent = citys[i].motto;
+                q.textContent = "Upcoming Events:";
                 containI.setAttribute('class', 'containI');
                 containP.setAttribute('class', 'containP');
-                p1.textContent = 'Year Founded: ' + citys[i].yearFounded;
-                p2.textContent = 'Population: ' + citys[i].currentPopulation;
-                p3.textContent = 'Annual Rainfall: ' + citys[i].averageRainfall;
+                p1.textContent = citys[i].events[1];
+                p2.textContent = citys[i].events[2];
+                p3.textContent = citys[i].events[3];
                 img.setAttribute('src', 'images/sodaSprings2.jpg');
                 img.setAttribute('alt', citys[i].photo);
 

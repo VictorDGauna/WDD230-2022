@@ -57,12 +57,12 @@ fetch(url)
 
                 card1.setAttribute('class', 'cities-fish')
                 h3.textContent = citys[i].name;
-                q.textContent = citys[i].motto;
+                q.textContent = "Upcoming Events:";
                 i2.setAttribute('class', 'i2');
                 containP.setAttribute('class', 'containP');
-                p1.textContent = 'Year Founded: ' + citys[i].yearFounded;
-                p2.textContent = 'Population: ' + citys[i].currentPopulation;
-                p3.textContent = 'Annual Rainfall: ' + citys[i].averageRainfall;
+                p1.textContent = citys[i].events[1];
+                p2.textContent = citys[i].events[2];
+                p3.textContent = citys[i].events[3];
                 img2.setAttribute('src', 'images/fishHaven2.jpg');
                 img2.setAttribute('alt', citys[i].photo);
 
